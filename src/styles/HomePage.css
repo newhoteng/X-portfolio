@@ -1,0 +1,30 @@
+.hc {
+  /* border: 4px solid red; */
+  height: calc(100vh - 5rem);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f4ef;
+}
+
+.hc span {
+  /* color: blue; */
+  font-family: 'Moirai One', cursive;;
+}
+
+.hc .more-links-cont {
+  /* border: 1px solid blue; */
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.hc .more-links {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
