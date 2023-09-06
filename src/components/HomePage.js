@@ -8,10 +8,14 @@ function HomePage() {
     <div className="hc">
       <h1>
         <span>HEY, I&#39;M </span>
-        HARRIET!
+        HARRIET OTENG!
       </h1>
       {/* <p>A Civil Engineer turned Software Developer</p> */}
-      <p>A Fullstack Software Developer with an affinity towards Frontend</p>
+      <p>
+        A Full-stack Software Developer
+        <br />
+        with an affinity towards Front-end
+      </p>
       <div className="more-links-cont">
         <Link to="/works">
           <div className="more-links">

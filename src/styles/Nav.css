@@ -12,12 +12,18 @@
   color: #2c0136;
 } */
 
+.nameLogo {
+  font-family: 'Wavefont', cursive;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
 nav {
   /* border: 2px solid red; */
   height: 5rem;
   background-color: #ecebf3;
   /* background-color: #ece4e2; */
-  background-color: #f2f4ef;
+  /* background-color: #f2f4ef; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,22 +42,22 @@ nav {
   width: 100%;
   height: 7px;
   /* background-color: #626b88; */
-  background-color: #3a5a69;
-  /* background-color: #2c0136; */
+  /* background-color: #3a5a69; */
+  background-color: #626b88;
   /* border: 1px solid black; */
 }
 
 .menu {
   width: 100%;
   height: calc(100vh - 5rem);
-  background-color: #f2f4ef;
+  background-color: #ecebf3;
   font-size: 3rem;
   position: absolute;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   padding: 0 2rem;
-  /* text-align: center; */
-  /* right: 0; */
-  /* z-index: 2; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hidden {
@@ -66,8 +72,9 @@ nav {
 
 /* clicked */
 .burgerBar.clicked:nth-child(1) {
-  transform: rotate(45deg) translate(0.7em, 0.7em);
+  transform: rotate(45deg) translate(0.3em, 0.7em);
   transition: ease-out 0.5s;
+  border-radius: 3.5px;
 }
 
 .burgerBar.clicked:nth-child(2) {
@@ -75,8 +82,9 @@ nav {
 }
 
 .burgerBar.clicked:nth-child(3) {
-  transform: rotate(135deg) translate(-0.7em, 0.75em);
+  transform: rotate(135deg) translate(-0.35em, 0.77em);
   transition: ease-out 0.5s;
+  border-radius: 3.5px;
 }
 
 /* unclicked */
@@ -85,19 +93,10 @@ nav {
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
 
-.menu div {
-  border: 2px solid blue;
-  /* list-style-type: none; */
-  /* display: inline-block; */
-  /* display: inline-block; */
-  /* text-align: left; */
-}
+.menu ul {
+  margin-top: 7rem;
+  list-style-type: none;
 
-.menu p {
-  border: 1px solid brown;
-  /* display: inline-block; */
-  /* text-align: center; */
-  /* text-decoration: none; */
 }
 
 .menu a {

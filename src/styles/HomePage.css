@@ -1,17 +1,29 @@
 .hc {
   /* border: 4px solid red; */
-  height: calc(100vh - 5rem);
+  /* height: calc(100vh - 5rem); */
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f2f4ef;
+  background-color: #ecebf3;
+  padding: 0 2rem;
 }
 
+/* -webkit-text-stroke-width: 3px;
+-webkit-text-stroke-color: black; */
+
 .hc span {
-  /* color: blue; */
-  font-family: 'Moirai One', cursive;;
+  color: #ecebf3;
+  /* font-family: 'Moirai One', cursive; */
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #2c0136; */
+  text-shadow: -1px 1px 0 #626b88, 1px 1px 0 #626b88, 1px -1px 0 #626b88, -1px -1px 0 #626b88;
 }
 
 .hc .more-links-cont {

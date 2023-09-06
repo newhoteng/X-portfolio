@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
-import { CgTikcode } from 'react-icons/cg';
+// import { CgTikcode } from 'react-icons/cg';
 
 // import { ImUser } from 'react-icons/im'; , Link
 import '../styles/Nav.css';
 
 function NavBar() {
   const [burgerClass, setBurgerClass] = useState('burgerBar unclicked');
-  const [menuClass, setMenuClass] = useState('menu visible');
+  const [menuClass, setMenuClass] = useState('menu hidden');
   const [isMenuClicked, setIsMenuClicked] = useState(false);
 
   const handleNavClick = () => {
@@ -30,7 +30,8 @@ function NavBar() {
   return (
     <>
       <nav>
-        <div><CgTikcode /></div>
+        <div className="nameLogo">Harriet Oteng</div>
+        {/* <div><CgTikcode /></div> */}
         <div className="burger-menu" onClick={updateMenu} role="presentation">
           <div className={burgerClass} />
           <div className={burgerClass} />
@@ -38,12 +39,12 @@ function NavBar() {
         </div>
       </nav>
       <div className={menuClass}>
-        <div>
-          <p><Link onClick={handleNavClick} to="/">HOME</Link></p>
-          <p><Link onClick={handleNavClick} to="/works">WORK</Link></p>
-          <p><Link onClick={handleNavClick} to="/about">ABOUT</Link></p>
-          <p><Link onClick={handleNavClick} to="/contact">CONTACT</Link></p>
-        </div>
+        <ul>
+          <li><Link onClick={handleNavClick} to="/">HOME</Link></li>
+          <li><Link onClick={handleNavClick} to="/works">WORK</Link></li>
+          <li><Link onClick={handleNavClick} to="/about">ABOUT</Link></li>
+          <li><Link onClick={handleNavClick} to="/contact">CONTACT</Link></li>
+        </ul>
       </div>
       <Outlet />
     </>
