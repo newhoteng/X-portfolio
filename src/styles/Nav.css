@@ -22,7 +22,9 @@ nav {
   /* border: 2px solid red; */
   height: 5rem;
   background-color: #ecebf3;
+
   /* background-color: #ece4e2; */
+
   /* background-color: #f2f4ef; */
   display: flex;
   align-items: center;
@@ -41,9 +43,12 @@ nav {
 .burgerBar {
   width: 100%;
   height: 7px;
+
   /* background-color: #626b88; */
+
   /* background-color: #3a5a69; */
   background-color: #626b88;
+
   /* border: 1px solid black; */
 }
 
@@ -53,6 +58,7 @@ nav {
   background-color: #ecebf3;
   font-size: 3rem;
   position: absolute;
+
   /* border: 2px solid red; */
   padding: 0 2rem;
   display: flex;
@@ -96,7 +102,6 @@ nav {
 .menu ul {
   margin-top: 7rem;
   list-style-type: none;
-
 }
 
 .menu a {
