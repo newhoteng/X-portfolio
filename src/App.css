@@ -22,6 +22,12 @@ html {
   /* color: #2c0136; */
 }
 
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
 /* .App {
   text-align: center;
 }

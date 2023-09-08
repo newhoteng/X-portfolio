@@ -16,12 +16,15 @@
   font-family: 'Wavefont', cursive;
   font-size: 2.5rem;
   font-weight: 900;
+  color: #ecebf3;
+  /* color: transparent; */
+  text-shadow: -1px 1px 0 #626b88, 1px 1px 0 #626b88, 1px -1px 0 #626b88, -1px -1px 0 #626b88;
 }
 
 nav {
   /* border: 2px solid red; */
   height: 5rem;
-  background-color: #ecebf3;
+  /* background-color: #ecebf3; */
 
   /* background-color: #ece4e2; */
 

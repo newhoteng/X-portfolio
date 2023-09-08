@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BiRightArrow } from 'react-icons/bi';
+// import { BiRightArrow } from 'react-icons/bi';
+// import { GoArrowRight } from 'react-icons/go';
+import { FiArrowRight } from 'react-icons/fi';
 import '../styles/HomePage.css';
 
 function HomePage() {
@@ -19,13 +21,13 @@ function HomePage() {
       <div className="more-links-cont">
         <Link to="/works">
           <div className="more-links">
-            <BiRightArrow />
+            <FiArrowRight />
             <p>see my projects</p>
           </div>
         </Link>
         <Link to="/about">
           <div className="more-links">
-            <BiRightArrow />
+            <FiArrowRight />
             <p>more about me</p>
           </div>
         </Link>

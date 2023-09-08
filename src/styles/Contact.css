@@ -1,0 +1,34 @@
+/* .contact-container {
+  width: 100%;
+} */
+
+.contact-container h1 {
+  border-bottom: 1.5px solid;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+.email-container,
+.socials-container {
+  /* border: 1px solid red; */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.email-item,
+.socials-item {
+  /* border: 1px solid red; */
+  width: 50%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-link {
+  border: 1px solid blue;
+  display: flex;
+  align-items: center;
+}
