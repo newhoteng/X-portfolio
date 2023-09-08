@@ -1,43 +1,20 @@
-/* * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
-  font-family: 'Lato', sans-serif;
-} */
-
-/* html {
-  color: #626b88;
-  color: #3a5a69;
-  color: #2c0136;
-} */
-
 .nameLogo {
   font-family: 'Wavefont', cursive;
-  font-size: 2.5rem;
+  font-size: 1.3rem;
   font-weight: 900;
   color: #ecebf3;
-  /* color: transparent; */
   text-shadow: -1px 1px 0 #626b88, 1px 1px 0 #626b88, 1px -1px 0 #626b88, -1px -1px 0 #626b88;
 }
 
 nav {
-  /* border: 2px solid red; */
-  height: 5rem;
-  /* background-color: #ecebf3; */
-
-  /* background-color: #ece4e2; */
-
-  /* background-color: #f2f4ef; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2rem;
+  padding: 2rem 2rem;
 }
 
 .burger-menu {
-  /* border: 1px solid black; */
-  width: 3rem;
+  width: 36px;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -46,13 +23,7 @@ nav {
 .burgerBar {
   width: 100%;
   height: 7px;
-
-  /* background-color: #626b88; */
-
-  /* background-color: #3a5a69; */
-  background-color: #626b88;
-
-  /* border: 1px solid black; */
+  border: 1px solid #626b88;
 }
 
 .menu {
@@ -61,8 +32,6 @@ nav {
   background-color: #ecebf3;
   font-size: 3rem;
   position: absolute;
-
-  /* border: 2px solid red; */
   padding: 0 2rem;
   display: flex;
   align-items: center;
@@ -81,8 +50,8 @@ nav {
 
 /* clicked */
 .burgerBar.clicked:nth-child(1) {
-  transform: rotate(45deg) translate(0.3em, 0.7em);
-  transition: ease-out 0.5s;
+  transform: rotate(45deg) translate(1.3em, -0.2em);
+  transition: ease-out 0.2s;
   border-radius: 3.5px;
 }
 
@@ -91,15 +60,15 @@ nav {
 }
 
 .burgerBar.clicked:nth-child(3) {
-  transform: rotate(135deg) translate(-0.35em, 0.77em);
-  transition: ease-out 0.5s;
+  transform: rotate(135deg) translate(-1.25em, -0.2em);
+  transition: ease-out 0.2s;
   border-radius: 3.5px;
 }
 
 /* unclicked */
 .burgerBar.unclicked {
   transform: rotate(0) translate(0);
-  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
 }
 
 .menu ul {
@@ -116,7 +85,14 @@ nav {
   font-weight: 500;
 }
 
-/* .menu button {
-  margin: 0 auto;
-  display: block;
-} */
+@media all and (min-width: 992px) {
+  nav {
+    /* border: 2px solid red; */
+
+    /* height: 5rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 6rem;
+  }
+}

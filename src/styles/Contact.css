@@ -1,12 +1,12 @@
-/* .contact-container {
+.details {
   width: 100%;
-} */
+}
 
 .contact-container h1 {
   border-bottom: 1.5px solid;
   width: 100%;
   text-align: left;
-  padding-bottom: 1rem;
+  padding-bottom: 0.6rem;
 }
 
 .email-container,
@@ -18,17 +18,45 @@
   padding: 1rem 0;
 }
 
-.email-item,
-.socials-item {
-  /* border: 1px solid red; */
+.contact-heading,
+.contact-body {
   width: 50%;
   text-align: left;
-  display: flex;
-  flex-direction: column;
+}
+
+.contact-heading {
+  padding-top: 0.3rem;
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
 .social-link {
-  border: 1px solid blue;
   display: flex;
   align-items: center;
+  gap: 0.1rem;
+  padding: 0.3rem 0;
+  width: fit-content;
+}
+
+.social-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.45rem;
+  text-underline-position: left;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+@media all and (min-width: 992px) {
+  .details {
+    width: 100%;
+    display: flex;
+  }
+
+  .contact-heading {
+    width: fit-content;
+    padding-right: 3rem;
+  }
+
+  .contact-body {
+    flex: 1;
+  }
 }

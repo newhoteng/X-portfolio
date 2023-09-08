@@ -24,8 +24,9 @@ html {
 
 a {
   text-decoration: none;
-  display: inline-block;
   color: inherit;
+
+  /* width: fit-content; */
 }
 
 /* .App {

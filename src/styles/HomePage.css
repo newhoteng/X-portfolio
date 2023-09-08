@@ -43,3 +43,9 @@
   justify-content: center;
   gap: 0.2rem;
 }
+
+@media all and (min-width: 992px) {
+  .hc {
+    padding: 0 6rem;
+  }
+}
