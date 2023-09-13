@@ -22,6 +22,13 @@ function About() {
         <FiArrowDown />
         resume
       </a>
+      <div>
+        <button type="button">JavaScript</button>
+        <button type="button">React</button>
+        <button type="button">Ruby</button>
+        <button type="button">HTML</button>
+        <button type="button">CSS</button>
+      </div>
     </div>
   );
 }
