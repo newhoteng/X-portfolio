@@ -8,6 +8,7 @@
   width: 100%;
   text-align: left;
   padding-bottom: 0.6rem;
+  font-weight: 900;
 }
 
 .email-container,
@@ -28,8 +29,8 @@
 .contact-heading {
   /* border: 1px solid blue; */
   padding-top: 0.3rem;
-  font-weight: 700;
-  font-size: 1.1rem;
+  font-weight: 900;
+  font-size: 1.2rem;
 }
 
 .link {
