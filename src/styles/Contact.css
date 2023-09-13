@@ -1,5 +1,6 @@
 .details {
   width: 100%;
+  border: 1px solid;
 }
 
 .contact-container h1 {
@@ -11,7 +12,7 @@
 
 .email-container,
 .socials-container {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -31,19 +32,18 @@
   font-size: 1.1rem;
 }
 
-.social-link {
+.link {
   display: flex;
   align-items: center;
   gap: 0.1rem;
   padding: 0.3rem 0;
   width: fit-content;
+  /* border: 1px solid blue; */
 }
 
-.social-link:hover {
+.link:hover {
   text-decoration: underline;
   text-underline-offset: 0.45rem;
-  text-underline-position: left;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
 @media all and (max-width: 500px) {

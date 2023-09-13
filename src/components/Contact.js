@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 // import { BiRightArrow } from 'react-icons/bi';
 // import { GoArrowUpRight } from 'react-icons/go';
 import { FiArrowUpRight } from 'react-icons/fi';
@@ -14,11 +14,11 @@ function Contact() {
         <div className="email-container">
           <p className="contact-heading">EMAIL</p>
           <div className="contact-body">
-            <a className="social-link" href="mailto:harriet.oteng@gmail.com">
+            <a className="link" href="mailto:harriet.oteng@gmail.com" target="_blank" rel="noreferrer">
               <FiArrowUpRight />
               harriet.oteng@gmail.com
             </a>
-            <a className="social-link" href="mailto:harriet.oteng@yahoo.com">
+            <a className="link" href="mailto:harriet.oteng@yahoo.com" target="_blank" rel="noreferrer">
               <FiArrowUpRight />
               harriet.oteng@yahoo.com
             </a>
@@ -27,30 +27,22 @@ function Contact() {
         <div className="socials-container">
           <p className="contact-heading">SOCIAL MEDIA</p>
           <div className="contact-body">
-            <Link to="https://www.linkedin.com/in/harriet-oteng/" target="_blank" rel="noreferrer">
-              <div className="social-link">
-                <FiArrowUpRight />
-                <p>LinkedIn</p>
-              </div>
-            </Link>
-            <Link to="https://github.com/newhoteng" target="_blank" rel="noreferrer">
-              <div className="social-link">
-                <FiArrowUpRight />
-                <p>GitHub</p>
-              </div>
-            </Link>
-            <Link to="https://instagram.com/harriet.oteng?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noreferrer">
-              <div className="social-link">
-                <FiArrowUpRight />
-                <p>Instagram</p>
-              </div>
-            </Link>
-            <Link to="https://twitter.com/HarrietOteng1" target="_blank" rel="noreferrer">
-              <div className="social-link">
-                <FiArrowUpRight />
-                <p>Twitter</p>
-              </div>
-            </Link>
+            <a className="link" href="https://www.linkedin.com/in/harriet-oteng/" target="_blank" rel="noreferrer">
+              <FiArrowUpRight />
+              LinkedIn
+            </a>
+            <a className="link" href="https://github.com/newhoteng" target="_blank" rel="noreferrer">
+              <FiArrowUpRight />
+              <p>GitHub</p>
+            </a>
+            <a className="link" to="https://instagram.com/harriet.oteng?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noreferrer">
+              <FiArrowUpRight />
+              Instagram
+            </a>
+            <a className="link" href="https://twitter.com/HarrietOteng1" target="_blank" rel="noreferrer">
+              <FiArrowUpRight />
+              Twitter
+            </a>
           </div>
         </div>
       </div>
