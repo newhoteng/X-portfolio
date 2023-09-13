@@ -13,11 +13,11 @@ nav {
   justify-content: space-between;
   padding: 0 1.5rem;
   border: 1px solid red;
+
   /* background-color: transparent; */
   position: fixed;
   top: 0;
   width: 100%;
-
 }
 
 .burger-menu {
@@ -32,16 +32,20 @@ nav {
   height: 7px;
   background-color: #626b88;
   border-radius: 3.5px;
+
   /* border: 1px solid #626b88; */
 }
 
 .menu {
   border: 2px solid blue;
   width: 100%;
+
   /* height: calc(100vh - 5rem); */
   height: 100vh;
   font-size: 3rem;
+
   /* position: absolute; */
+
   /* top: 0; */
   padding: 5rem 1.5rem;
   font-weight: 700;
