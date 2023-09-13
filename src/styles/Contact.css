@@ -25,6 +25,7 @@
 }
 
 .contact-heading {
+  /* border: 1px solid blue; */
   padding-top: 0.3rem;
   font-weight: 700;
   font-size: 1.1rem;
@@ -43,6 +44,19 @@
   text-underline-offset: 0.45rem;
   text-underline-position: left;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+@media all and (max-width: 500px) {
+  .contact-heading {
+    /* border: 1px solid; */
+    width: 35%;
+    padding-right: 2rem;
+  }
+
+  .contact-body {
+    /* border: 1px solid brown; */
+    flex: 1;
+  }
 }
 
 @media all and (min-width: 992px) {
