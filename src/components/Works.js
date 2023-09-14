@@ -1,4 +1,5 @@
 import React from 'react';
+import { FiArrowUpRight } from 'react-icons/fi';
 import metrics from '../images/Metrics.png';
 import '../styles/Works.css';
 
@@ -70,22 +71,30 @@ const projects = [
 
 function Works() {
   return (
-    <div className="works-container">
+    <div className="works-cont">
       <h1>FEATURED PROJECTS</h1>
-      <div className="projects-container">
+      <div className="projects-cont">
         {projects.map((project) => (
-          <div key={project.id} className="project-container">
+          <div key={project.id} className="project-cont">
             <img src={project.image} alt="Screenshot of project" />
-            <h2>{project.name}</h2>
-            <p>{project.desc}</p>
-            <div>
-              {project.techs.map((tech) => (
-                <button key={tech} type="button">{tech}</button>
-              ))}
-            </div>
-            <div>
-              <a href="s">site</a>
-              <a href="s">code</a>
+            <div className="text-cont">
+              <h2>{project.name}</h2>
+              <p>{project.desc}</p>
+              <div className="buttons-cont">
+                {project.techs.map((tech) => (
+                  <button key={tech} type="button">{tech}</button>
+                ))}
+              </div>
+              <div className="links-cont">
+                <a className="link" href={project.live} target="_blank" rel="noreferrer">
+                  <FiArrowUpRight />
+                  site
+                </a>
+                <a className="link" href={project.source} target="_blank" rel="noreferrer">
+                  <FiArrowUpRight />
+                  code
+                </a>
+              </div>
             </div>
           </div>
         ))}

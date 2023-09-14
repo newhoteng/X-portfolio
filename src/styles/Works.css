@@ -1,4 +1,4 @@
-.works-container {
+.works-cont {
   border: 2px solid blue;
   padding: 5rem 1.5rem 1.5rem;
   z-index: -1;
@@ -8,7 +8,7 @@
   /* width: 100%; */
 }
 
-.works-container h1 {
+.works-cont h1 {
   border-bottom: 1.5px solid;
   width: 100%;
   text-align: left;
@@ -17,29 +17,66 @@
   margin-bottom: 1.3rem;
 }
 
-.projects-container {
+.projects-cont {
   /* border: 2px solid green; */
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-.project-container {
+.project-cont {
   border: 0.5px solid;
   padding: 16px;
   border-radius: 16px;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.project-container img {
+.project-cont img {
   /* border: 0.5px solid red; */
   width: 100%;
   border-radius: 8px;
 }
 
-.project-container h2 {
+.project-cont .text-cont {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-cont h2 {
   font-weight: 900;
   font-size: 1.2rem;
+}
+
+.text-cont .buttons-cont {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: center; */
+  white-space: nowrap;
+  gap: 0.5rem;
+}
+
+.text-cont button {
+  background-color: #ebebff;
+  border-radius: 8px;
+  border: none;
+  color: #6070ff;
+  font-weight: 550;
+  padding: 4px 12px;
+}
+
+.text-cont .links-cont {
+  /* border: 1px solid green; */
+  display: flex;
+  gap: 0.5rem;
+}
+
+.links-cont .link {
+  padding: 0;
 }
