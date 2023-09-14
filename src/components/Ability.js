@@ -1,31 +1,33 @@
 import React, { useState } from 'react';
-// import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FiArrowRight } from 'react-icons/fi';
 
 function DropDown({ ability }) {
-  const [arrowIconClass, setarrowIcon] = useState('');
-  const [skillDetailsClass, setskillDetails] = useState('details hidden');
+  const [arrowIconClass, setArrowIcon] = useState('');
+  const [skillDetailsClass, setSkillDetails] = useState('details hidden');
+  const [headerClass, setHeaderClass] = useState('');
 
   const handleArrowClick = () => {
     if (skillDetailsClass === 'details hidden') {
-      setskillDetails('details visible');
-      setarrowIcon('rotate');
+      setSkillDetails('details visible');
+      setArrowIcon('rotate');
+      setHeaderClass('no-underline');
     } else {
-      setskillDetails('details hidden');
-      setarrowIcon('');
+      setSkillDetails('details hidden');
+      setArrowIcon('unclicked');
+      setHeaderClass('');
     }
   };
 
   return (
-    <div className="language-cont">
-      <h2 onClick={handleArrowClick} role="presentation">
+    <div className="ability-cont">
+      <h2 className={headerClass} onClick={handleArrowClick} role="presentation">
         {ability.type}
         <FiArrowRight className={arrowIconClass} />
       </h2>
       <div className={skillDetailsClass}>
         {ability.list.map((item) => (
-          <p key={item}>{item}</p>
+          <button type="button" key={item}>{item}</button>
         ))}
       </div>
     </div>

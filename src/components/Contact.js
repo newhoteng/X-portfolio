@@ -1,7 +1,4 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-// import { BiRightArrow } from 'react-icons/bi';
-// import { GoArrowUpRight } from 'react-icons/go';
 import { FiArrowUpRight } from 'react-icons/fi';
 
 import '../styles/Contact.css';

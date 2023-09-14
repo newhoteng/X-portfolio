@@ -17,24 +17,21 @@
   padding: 0 1.5rem;
 }
 
-/* -webkit-text-stroke-width: 3px;
--webkit-text-stroke-color: black; */
+.hc h1 {
+  /* border-bottom: 1.5px solid; */
+  width: 100%;
+  padding-bottom: 0.6rem;
+  font-weight: 900;
+}
 
 .hc span {
   color: #ecebf3;
-
-  /* font-family: 'Moirai One', cursive; */
-
-  /* -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #2c0136; */
   text-shadow: -1px 1px 0 #626b88, 1px 1px 0 #626b88, 1px -1px 0 #626b88, -1px -1px 0 #626b88;
 }
 
 .hc .more-links-cont {
   /* border: 1px solid blue; */
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
   gap: 2rem;
   margin-top: 2rem;
 }

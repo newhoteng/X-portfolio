@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import { BiRightArrow } from 'react-icons/bi';
-// import { GoArrowRight } from 'react-icons/go';
 import { FiArrowRight } from 'react-icons/fi';
 import '../styles/HomePage.css';
 
@@ -12,11 +10,10 @@ function HomePage() {
         <span>HEY, I&#39;M </span>
         HARRIET OTENG!
       </h1>
-      {/* <p>A Civil Engineer turned Software Developer</p> */}
       <p>
         A Full-stack Software Developer
         <br />
-        with an affinity towards Front-end
+        with an eye for details
       </p>
       <div className="more-links-cont">
         <Link to="/works">

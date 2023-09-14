@@ -12,6 +12,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 1.5rem;
+
   /* border: 1px solid red; */
 
   /* background-color: transparent; */
@@ -43,9 +44,7 @@ nav {
   /* height: calc(100vh - 5rem); */
   height: 100vh;
   font-size: 3rem;
-
   position: fixed;
-
   top: 0;
   z-index: -1;
   padding: 5rem 1.5rem;
@@ -89,6 +88,7 @@ nav {
 
 .menu ul {
   list-style-type: none;
+
   /* border: 1px solid yellow; */
   height: 100%;
   display: flex;
