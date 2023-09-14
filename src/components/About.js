@@ -1,11 +1,20 @@
 import React from 'react';
 import { FiArrowDown } from 'react-icons/fi';
+import DropDown from './Ability';
 import resume from '../Harriet_Oteng_Resume.pdf';
-// import profilePic from '../images/HT2-cropped.jpg';
 
 import '../styles/About.css';
 
 function About() {
+  const abilities = [
+    { type: 'LANGUAGES', list: ['JavaScript', 'Ruby', 'Python'] },
+    { type: 'FRAMEWORKS', list: ['React', 'Ruby on Rails', 'Djanjo'] },
+    { type: 'WEB DEVELOPMENT', list: ['HTML', 'CSS'] },
+    { type: 'DATABASE MANAGEMENT', list: ['PostgreSQL', 'MySQL'] },
+    { type: 'TOOLS & METHODS', list: ['Git', 'GitHub', 'TDD', 'Chrome Dev Tools', 'Agile', 'Waterfall', 'Slack'] },
+    { type: 'PROFESSIONAL SKILLS', list: ['Remote Pair-Programming', 'Teamwork', 'Project Management', 'Communication', 'Problem Solving', 'Mentoring'] },
+  ];
+
   return (
     <div className="about-container">
       <div className="profile-img" />
@@ -23,11 +32,11 @@ function About() {
         resume
       </a>
       <div>
-        <button type="button">JavaScript</button>
-        <button type="button">React</button>
-        <button type="button">Ruby</button>
-        <button type="button">HTML</button>
-        <button type="button">CSS</button>
+        <div className="abilities-cont">
+          {abilities.map((ability) => (
+            <DropDown key={ability.type} ability={ability} />
+          ))}
+        </div>
       </div>
     </div>
   );

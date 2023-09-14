@@ -5,7 +5,7 @@ import '../styles/Works.css';
 
 const projects = [
   {
-    id: 1,
+    Id: 1,
     name: 'SPA SERVICES',
     desc: 'Spa Services is a web application that requires users to register an account and login. Users are then able to reserve a spa service and add a spa service of their choice',
     image: '../images/Metrics.png',
