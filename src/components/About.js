@@ -7,23 +7,20 @@ import '../styles/About.css';
 
 function About() {
   const abilities = [
-    { type: 'LANGUAGES', list: ['JavaScript', 'Ruby', 'Python'] },
-    { type: 'FRAMEWORKS', list: ['React', 'Ruby on Rails', 'Django'] },
-    { type: 'WEB DEVELOPMENT', list: ['HTML', 'CSS'] },
-    { type: 'DATABASE MANAGEMENT', list: ['PostgreSQL', 'MySQL'] },
-    { type: 'TOOLS & METHODS', list: ['Git', 'GitHub', 'TDD', 'Chrome Dev Tools', 'Agile', 'Waterfall', 'Slack'] },
+    { type: 'STACK', list: ['JavaScript', 'Ruby', 'Python', 'React', 'Ruby on Rails', 'Django', 'HTML', 'CSS', 'PostgreSQL'] },
+    { type: 'TOOLS & METHODS', list: ['Git', 'GitHub', 'Slack', 'TDD', 'Chrome Dev Tools', 'Agile', 'Waterfall'] },
     { type: 'PROFESSIONAL SKILLS', list: ['Remote Pair-Programming', 'Teamwork', 'Project Management', 'Communication', 'Problem Solving', 'Mentoring'] },
   ];
 
   return (
     <div className="about-container">
-      <div>
+      <div className="about-text">
         <div className="profile-img" />
         <h1>ABOUT</h1>
         <p>
           Hi, my name is Harriet Oteng.
           I&#39;m Civil Engineer turned Software Developer from Ghana.
-          I build websites that are functional, responsiveness, and beautiful to look at.
+          I build websites that are functional, responsiveness, and aesthetically pleasing.
           <br />
           My hobbies include gardening and listening to music.
         </p>

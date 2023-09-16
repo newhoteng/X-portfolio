@@ -31,7 +31,7 @@ const projects = [
   {
     id: 2,
     name: 'METRICS',
-    desc: 'Metrics is a single-page-application built with react and redux. It fetches air quality data for selected cities from an API and displays the cities with their corresponding air quality index (aqi) on the homepage. Clicking on a city on the homepage directs users to a details page which lists the concentration of the various pollutants.',
+    desc: 'Metrics is a single-page-application built with react and redux. It fetches air quality data for selected cities from an API and displays the city names with their corresponding air quality index (aqi) on the homepage. Clicking on a city on the homepage directs users to a details page which lists the concentration of the various pollutants.',
     image: metrics,
     techs: ['React', 'Redux', 'React-Router', 'React-testing-library'],
     live: 'https://metrics-59av.onrender.com/',
@@ -40,7 +40,7 @@ const projects = [
   {
     id: 3,
     name: 'EXTRACK',
-    desc: 'Pending',
+    desc: 'Extrack is an expense tracking app that allows users to make transactions associated with one or more categories and view total transactions for each category.',
     image: exTrack,
     techs: ['Ruby on Rails', 'Devise Gem', 'PostgreSQL', 'HTML', 'CSS'],
     live: 'https://extrack.onrender.com',

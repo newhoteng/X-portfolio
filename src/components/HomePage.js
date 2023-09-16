@@ -13,7 +13,7 @@ function HomePage() {
       <p>
         A Full-stack Software Developer
         <br />
-        with an eye for details
+        with an eye for details based in Ghana
       </p>
       <div className="more-links-cont">
         <Link to="/works">

@@ -99,6 +99,21 @@ nav {
 }
 
 @media all and (min-width: 768px) {
+  nav {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6rem;
+  
+    /* border: 1px solid red; */
+  
+    /* background-color: transparent; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
   .burger-menu {
     display: none;
   }
@@ -132,7 +147,7 @@ nav {
     flex-direction: row ;
     justify-content: center;
     gap: 1rem;
-    padding: 0.5rem;
+    padding: 0.4rem;
   }
 
   .menu li {
@@ -140,23 +155,9 @@ nav {
   
     /* border: 1px solid green; */
     /* background-color: #ebebff; */
-    padding: 0.3rem 1rem;
+    padding: 0.3rem 0.6rem;
     border-radius: 50vh;
     opacity: 1;
-    /* height: 100%; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-  }
-
-  .menu li a:active {
-    background-color: pink;
-    /* list-style-type: none; */
-  
-    /* border: 1px solid green; */
-    /* padding: 0.3rem 1rem; */
-    /* border-radius: 50vh; */
-    /* opacity: 1; */
     /* height: 100%; */
     /* display: flex; */
     /* flex-direction: column; */
