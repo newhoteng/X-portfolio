@@ -1,8 +1,5 @@
 import { useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
-// import { CgTikcode } from 'react-icons/cg';
-
-// import { ImUser } from 'react-icons/im'; , Link
 import '../styles/Nav.css';
 
 function NavBar() {
@@ -31,7 +28,6 @@ function NavBar() {
     <>
       <nav>
         <div className="nameLogo">Harriet Oteng</div>
-        {/* <div><CgTikcode /></div> */}
         <div className="burger-menu" onClick={updateMenu} role="presentation">
           <div className={burgerClass} />
           <div className={burgerClass} />
