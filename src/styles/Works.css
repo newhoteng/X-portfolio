@@ -82,3 +82,7 @@
 .links-cont .link {
   padding: 0;
 }
+
+@media all and (min-width: 768px) {
+  
+}

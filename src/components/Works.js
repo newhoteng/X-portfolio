@@ -4,12 +4,21 @@ import metrics from '../images/Metrics.png';
 import spaService from '../images/spa-services (1).png';
 import exTrack from '../images/Extrack15deg.png';
 import bookstore from '../images/bookstore.png';
-import space from '../images/space-travellers.png';
+import space from '../images/space-travellers-lighter.png';
 import conference from '../images/Conference.png';
 import todo from '../images/ToDo.png';
 import '../styles/Works.css';
 
 const projects = [
+  {
+    id: 4,
+    name: 'BOOKSTORE',
+    desc: 'Bookstore is a Single Page Application(SPA) website that displays a list of books and allows users to add or remove a selected book.',
+    image: bookstore,
+    techs: ['React', 'JavaScript', 'Redux', 'CSS'],
+    live: 'https://newhoteng.github.io/Bookstore/',
+    source: 'https://github.com/newhoteng/Bookstore',
+  },
   {
     Id: 1,
     name: 'SPA SERVICES',
@@ -36,15 +45,6 @@ const projects = [
     techs: ['Ruby on Rails', 'Devise Gem', 'PostgreSQL', 'HTML', 'CSS'],
     live: 'https://extrack.onrender.com',
     source: 'https://github.com/newhoteng/spa-booking-frontend',
-  },
-  {
-    id: 4,
-    name: 'BOOKSTORE',
-    desc: 'Bookstore is a Single Page Application(SPA) website that displays a list of books and allows users to add or remove a selected book.',
-    image: bookstore,
-    techs: ['React', 'JavaScript', 'Redux', 'CSS'],
-    live: 'https://newhoteng.github.io/Bookstore/',
-    source: 'https://github.com/newhoteng/Bookstore',
   },
   {
     id: 5,

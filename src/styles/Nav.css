@@ -4,6 +4,7 @@
   font-weight: 900;
   color: #ecebf3;
   text-shadow: -1px 1px 0 #626b88, 1px 1px 0 #626b88, 1px -1px 0 #626b88, -1px -1px 0 #626b88;
+  /* border: 1px solid red; */
 }
 
 nav {
@@ -46,6 +47,7 @@ nav {
   font-size: 3rem;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: -1;
   padding: 5rem 1.5rem;
   font-weight: 700;
@@ -94,4 +96,70 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media all and (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
+
+  .menu {
+    /* border: 2px solid blue; */
+    width: fit-content;
+  
+    /* height: calc(100vh - 5rem); */
+    height: fit-content;
+    font-size: 1rem;
+    position: static;
+    top: inherit;
+    z-index: 0;
+    padding: 0;
+    /* font-weight: 700; */
+    /* background-color: #fff; */
+    border-radius: 50vh;
+    opacity: 0.85;
+    /* background-color: transparent; */
+  }
+
+  .menu ul {
+    /* list-style-type: none; */
+  
+    /* border: 1px solid yellow; */
+    border-radius: 50vh;
+    height: 100%;
+    height: fit-content;
+    /* display: flex; */
+    flex-direction: row ;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+
+  .menu li {
+    /* list-style-type: none; */
+  
+    /* border: 1px solid green; */
+    /* background-color: #ebebff; */
+    padding: 0.3rem 1rem;
+    border-radius: 50vh;
+    opacity: 1;
+    /* height: 100%; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+  }
+
+  .menu li a:active {
+    background-color: pink;
+    /* list-style-type: none; */
+  
+    /* border: 1px solid green; */
+    /* padding: 0.3rem 1rem; */
+    /* border-radius: 50vh; */
+    /* opacity: 1; */
+    /* height: 100%; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+  }
 }
