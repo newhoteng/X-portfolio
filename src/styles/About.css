@@ -11,6 +11,7 @@
 .about-container .profile-img {
   background: url("../images/HT2-cropped.jpg") 0 0 no-repeat;
   background-size: cover;
+
   /* border: 0.5px solid; */
   width: 100%;
   height: 65vh;
@@ -36,17 +37,8 @@
   text-align: justify;
 }
 
-/* .ability-cont {
-  border: 1px solid green;
-} */
-
 .ability-cont h2 {
-  /* border: 1px solid green; */
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: space-between; */
   padding: 1rem 0;
-  /* border-bottom: 1px solid; */
 }
 
 .details {
@@ -56,7 +48,6 @@
   white-space: nowrap;
   gap: 0.5rem;
   padding-bottom: 1rem;
-  /* border: 1px solid red; */
 }
 
 .details button {
@@ -77,35 +68,19 @@
 
 @media all and (min-width: 992px) {
   .about-container .profile-img {
-    /* background: url("../images/HT2-cropped.jpg") 0 0 no-repeat; */
-    /* background-size: cover; */
-    /* border: 0.5px solid; */
-    width: 100%;
     height: 50vh;
-  
-    aspect-ratio: 1 / 1;
-  
-    /* object-fit: cover; */
-    /* border-radius: 25px; */
-    /* box-shadow: inset 0 0 0 90vmax rgba(220, 210, 224, 0.7); */
   }
 
   .about-container {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .about-text {
-    /* border: 1px solid green; */
     width: 40%;
   }
 
   .abilities-cont {
-    /* border: 1px solid pink; */
     width: 60%;
-  }
-
-  .ability-cont {
-    /* border: 1px solid brown; */
   }
 }

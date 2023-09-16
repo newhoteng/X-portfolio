@@ -72,6 +72,7 @@
 
 .text-cont button {
   background-color: #ebebff;
+
   /* border-radius: 8px; */
   border-radius: 50vh;
   border: none;
@@ -95,9 +96,11 @@
     /* border: 2px solid blue; */
     padding: 5rem 6rem 1.5rem;
     z-index: -2;
+
     /* position: absolute; */
+
     /* top: 0; */
-  
+
     /* width: 100%; */
   }
 }
@@ -117,6 +120,7 @@
     /* border: 0.5px solid red; */
     width: 50%;
     aspect-ratio: 4 / 3;
+
     /* border-radius: 8px; */
   }
 

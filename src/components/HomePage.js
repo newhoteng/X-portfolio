@@ -7,13 +7,13 @@ function HomePage() {
   return (
     <div className="hc">
       <h1>
-        <span>HEY, I&#39;M </span>
+        <span>HI THERE, I&#39;M </span>
         HARRIET OTENG!
       </h1>
       <p>
         A Full-stack Software Developer
         <br />
-        with an eye for details based in Ghana
+        with a keen eye for details.
       </p>
       <div className="more-links-cont">
         <Link to="/works">

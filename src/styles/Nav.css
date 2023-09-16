@@ -4,7 +4,6 @@
   font-weight: 900;
   color: #ecebf3;
   text-shadow: -1px 1px 0 #626b88, 1px 1px 0 #626b88, 1px -1px 0 #626b88, -1px -1px 0 #626b88;
-  /* border: 1px solid red; */
 }
 
 nav {
@@ -13,10 +12,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 1.5rem;
-
-  /* border: 1px solid red; */
-
-  /* background-color: transparent; */
   position: fixed;
   top: 0;
   width: 100%;
@@ -34,15 +29,10 @@ nav {
   height: 7px;
   background-color: #626b88;
   border-radius: 3.5px;
-
-  /* border: 1px solid #626b88; */
 }
 
 .menu {
-  /* border: 2px solid blue; */
   width: 100%;
-
-  /* height: calc(100vh - 5rem); */
   height: 100vh;
   font-size: 3rem;
   position: fixed;
@@ -90,8 +80,6 @@ nav {
 
 .menu ul {
   list-style-type: none;
-
-  /* border: 1px solid yellow; */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -105,10 +93,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0 6rem;
-  
-    /* border: 1px solid red; */
-  
-    /* background-color: transparent; */
     position: fixed;
     top: 0;
     width: 100%;
@@ -119,48 +103,29 @@ nav {
   }
 
   .menu {
-    /* border: 2px solid blue; */
+    border: 0.1px solid #6070ff;
     width: fit-content;
-  
-    /* height: calc(100vh - 5rem); */
-    height: fit-content;
+    height: max-content;
     font-size: 1rem;
     position: static;
     top: inherit;
     z-index: 0;
     padding: 0;
-    /* font-weight: 700; */
-    /* background-color: #fff; */
     border-radius: 50vh;
     opacity: 0.85;
-    /* background-color: transparent; */
   }
 
   .menu ul {
-    /* list-style-type: none; */
-  
-    /* border: 1px solid yellow; */
     border-radius: 50vh;
-    height: 100%;
-    height: fit-content;
-    /* display: flex; */
-    flex-direction: row ;
+    flex-direction: row;
     justify-content: center;
     gap: 1rem;
     padding: 0.4rem;
   }
 
   .menu li {
-    /* list-style-type: none; */
-  
-    /* border: 1px solid green; */
-    /* background-color: #ebebff; */
     padding: 0.3rem 0.6rem;
     border-radius: 50vh;
     opacity: 1;
-    /* height: 100%; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
   }
 }
