@@ -1,5 +1,4 @@
 .about-container {
-  /* border: 3px solid brown; */
   padding: 5rem 1.5rem 1rem;
   position: absolute;
   top: 0;
@@ -11,14 +10,8 @@
 .about-container .profile-img {
   background: url("../images/HT2-cropped.jpg") 0 0 no-repeat;
   background-size: cover;
-
-  /* border: 0.5px solid; */
   width: 100%;
   height: 65vh;
-
-  /* aspect-ratio: 9 / 16; */
-
-  /* object-fit: cover; */
   border-radius: 25px;
   box-shadow: inset 0 0 0 90vmax rgba(220, 210, 224, 0.7);
 }

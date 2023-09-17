@@ -7,7 +7,7 @@ function Contact() {
   return (
     <div className="contact-container hc">
       <h1>CONTACT</h1>
-      <div className="details">
+      <div className="contact-details">
         <div className="email-container">
           <p className="contact-heading">EMAIL</p>
           <div className="contact-body">

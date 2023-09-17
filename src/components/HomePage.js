@@ -16,13 +16,13 @@ function HomePage() {
         with a keen eye for details.
       </p>
       <div className="more-links-cont">
-        <Link to="/works">
+        <Link className="link" to="/works">
           <div className="more-links">
             <FiArrowRight />
             <p>see my projects</p>
           </div>
         </Link>
-        <Link to="/about">
+        <Link className="link" to="/about">
           <div className="more-links">
             <FiArrowRight />
             <p>more about me</p>

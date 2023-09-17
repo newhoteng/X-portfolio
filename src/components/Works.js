@@ -67,9 +67,9 @@ const projects = [
   {
     id: 7,
     name: 'TO-DO-LIST',
-    desc: 'A simple "To-do list" app that allows users to add, check off, and delete daily tasks. It is built with HTML, CSS, JavaScript and packaged using webpack',
+    desc: 'A ‘To-do list’ app that allows users to add, check off, and delete daily tasks. It also has a drag and drop feature that facilitates the re-ordering of tasks.',
     image: todo,
-    techs: ['HTML', 'CSS', 'JavaScript', 'Webpack', 'GitHub Pages'],
+    techs: ['HTML', 'CSS', 'JavaScript', 'Webpack', 'Jest', 'GitHub Pages'],
     live: 'https://newhoteng.github.io/To-do-list/',
     source: 'https://github.com/newhoteng/To-do-list',
   },
@@ -95,12 +95,12 @@ function Works() {
                 {project.live && (
                   <a className="link" href={project.live} target="_blank" rel="noreferrer">
                     <FiArrowUpRight />
-                    site
+                    visit site
                   </a>
                 )}
                 <a className="link" href={project.source} target="_blank" rel="noreferrer">
                   <FiArrowUpRight />
-                  code
+                  see code
                 </a>
               </div>
             </div>

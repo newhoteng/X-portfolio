@@ -14,12 +14,9 @@
 }
 
 .hc h1 {
-  /* border: 1.5px solid; */
   width: 100%;
   margin-bottom: 0.6rem;
   font-weight: 900;
-
-  /* font-size: 2.5rem; */
 }
 
 .hc span {
@@ -28,14 +25,12 @@
 }
 
 .hc .more-links-cont {
-  /* border: 1px solid blue; */
   display: flex;
   gap: 2rem;
   margin-top: 2rem;
 }
 
 .hc .more-links {
-  /* border: 1px solid red; */
   display: flex;
   align-items: center;
   justify-content: center;
