@@ -41,7 +41,7 @@ X-portfolio is a web application that showcases my projects, gives visitors deta
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :rocket: Live Demo <a name="live-demo"></a>
-- [Harriet Portfolio](https://metrics-59av.onrender.com/)
+- [Harriet's Portfolio](https://harriet-oteng.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
