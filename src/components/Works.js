@@ -11,13 +11,13 @@ import '../styles/Works.css';
 
 const projects = [
   {
-    id: 4,
-    name: 'BOOKSTORE',
-    desc: 'A web application where users can add and remove books. The homepage displays a list of all added books. Data is stored and fetched from API endpoints.',
-    image: bookstore,
-    techs: ['React', 'Redux', 'JavaScript', 'React-Router', 'API', 'CSS', 'GitHub Pages'],
-    live: 'https://newhoteng.github.io/Bookstore/',
-    source: 'https://github.com/newhoteng/Bookstore',
+    id: 6,
+    name: 'CONFERENCE',
+    desc: 'A web application for a fictional Engineer’s Conference that provides relevant information to attendees and would be attendees alike. It features a home and about page.',
+    image: conference,
+    techs: ['HTML', 'CSS', 'JavaScript', 'GitHub Pages'],
+    live: 'https://newhoteng.github.io/Capstone-1/',
+    source: 'https://github.com/newhoteng/Capstone-1',
   },
   {
     id: 2,
@@ -47,6 +47,15 @@ const projects = [
     source: 'https://github.com/newhoteng/Space-travelers-hub',
   },
   {
+    id: 4,
+    name: 'BOOKSTORE',
+    desc: 'A web application where users can add and remove books. The homepage displays a list of all added books. Data is stored and fetched from API endpoints.',
+    image: bookstore,
+    techs: ['React', 'Redux', 'JavaScript', 'React-Router', 'API', 'CSS', 'GitHub Pages'],
+    live: 'https://newhoteng.github.io/Bookstore/',
+    source: 'https://github.com/newhoteng/Bookstore',
+  },
+  {
     Id: 1,
     name: 'SPA SERVICES',
     desc: 'A full-stack “reservation” web application that requires users to be registered and logged in to use. Visitors to the website are able to make reservations for spa services. It features a homepage that displays all available services, a details page that provide details on selected service. Users can play around with adding their own service and making a service unavailable via the delete page. This project was created in collaboration with 3 other developers through remote-pair-programming.',
@@ -54,15 +63,6 @@ const projects = [
     techs: ['React', 'Redux', 'JavaScript', 'Ruby on Rails', 'Devise Gem', 'PostgreSQL', 'CSS'],
     live: '',
     source: 'https://github.com/newhoteng/spa-booking-frontend',
-  },
-  {
-    id: 6,
-    name: 'CONFERENCE',
-    desc: 'A web application for a fictional Engineer’s Conference that provides relevant information to attendees and would be attendees alike. It features a home and about page.',
-    image: conference,
-    techs: ['HTML', 'CSS', 'JavaScript', 'GitHub Pages'],
-    live: 'https://newhoteng.github.io/Capstone-1/',
-    source: 'https://github.com/newhoteng/Capstone-1',
   },
   {
     id: 7,
