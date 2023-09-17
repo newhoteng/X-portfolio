@@ -64,7 +64,7 @@ const projects = [
     Id: 1,
     name: 'SPA SERVICES',
     features: ['Pair-Programming', 'Responsive'],
-    desc: 'A full-stack “reservation” web application that requires users to be registered and logged in to use. Visitors to the website can make reservations for spa services. It features a homepage that displays all available services, and a details page that provide details on selected service. Users can play around with adding their service and making a service unavailable via the delete page.',
+    desc: 'A full-stack “reservation” web application that requires users to be registered and logged in to use. Visitors to the website can make reservations for spa services. It features a homepage that displays all available services, and a details page that provide details on selected service. Users can play around with adding a service and making a service unavailable via the delete page.',
     image: spaService,
     techs: ['React', 'Redux', 'JavaScript', 'Ruby on Rails', 'Devise Gem', 'PostgreSQL', 'CSS'],
     live: '',
