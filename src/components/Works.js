@@ -13,6 +13,7 @@ const projects = [
   {
     id: 6,
     name: 'CONFERENCE',
+    features: ['Solo', 'Responsive'],
     desc: 'A web application for a fictional Engineer’s Conference that provides relevant information to attendees and would be attendees alike. It features a home and about page.',
     image: conference,
     techs: ['HTML', 'CSS', 'JavaScript', 'GitHub Pages'],
@@ -22,7 +23,8 @@ const projects = [
   {
     id: 2,
     name: 'METRICS',
-    desc: 'A web app that fetches and displays air quality data for selected cities from an API. A click on a city on the homepage directs to the details page that lists the concentration of the various pollutants. It has a color indicator feature that shows an air icon in a different color based on the current air quality index.',
+    features: ['Solo', 'Responsive'],
+    desc: 'A web app that fetches and displays air quality data for selected cities from an API. A click on a city on the homepage directs you to the details page that lists the concentration of the various pollutants. It has a colour indicator feature that shows an air icon in a different colour based on the current air quality index.',
     image: metrics,
     techs: ['React', 'Redux', 'JavaScript', 'React-Router', 'API', 'CSS', 'React Testing Library', 'Render'],
     live: 'https://metrics-59av.onrender.com/',
@@ -31,6 +33,7 @@ const projects = [
   {
     id: 3,
     name: 'EXTRACK',
+    features: ['Solo', 'Responsive'],
     desc: 'A full-stack expense tracking app that requires users to be registered and logged in to use its features. Users will first have to create one or more “categories” then they can add expenses that are associated with one or more categories. The app also shows the total expenses for each category.',
     image: exTrack,
     techs: ['Ruby on Rails', 'Devise Gem', 'PostgreSQL', 'HTML', 'CSS', 'RSpec', 'Render'],
@@ -40,7 +43,8 @@ const projects = [
   {
     id: 5,
     name: 'SPACE TRAVELERS\' HUB',
-    desc: 'This implementation pulls Rockets, Missions and Dragons data from an API and displays them on separate pages. Each Rocket, Mission and Dragon item feature a button that allows visitors to reserve or join. The profile page displays a list of joined or reserved Rockets, Mission and Dragons. This project was created in collaboration with 2 other developers through remote-pair-programming.',
+    features: ['Pair-Programming', 'min 650px'],
+    desc: 'This implementation pulls Rockets, Missions and Dragons data from an API and displays them on separate pages. Each Rocket, Mission and Dragon item feature a button that allows visitors to reserve or join. The profile page displays a list of joined or reserved Rockets, Mission and Dragons.',
     image: space,
     techs: ['React', 'Redux', 'JavaScript', 'React-Router', 'API', 'CSS', 'React Testing Library', 'Render'],
     live: 'https://space-travelers-hub-36vw.onrender.com/',
@@ -49,6 +53,7 @@ const projects = [
   {
     id: 4,
     name: 'BOOKSTORE',
+    features: ['Solo', 'min 800px'],
     desc: 'A web application where users can add and remove books. The homepage displays a list of all added books. Data is stored and fetched from API endpoints.',
     image: bookstore,
     techs: ['React', 'Redux', 'JavaScript', 'React-Router', 'API', 'CSS', 'GitHub Pages'],
@@ -58,7 +63,8 @@ const projects = [
   {
     Id: 1,
     name: 'SPA SERVICES',
-    desc: 'A full-stack “reservation” web application that requires users to be registered and logged in to use. Visitors to the website are able to make reservations for spa services. It features a homepage that displays all available services, a details page that provide details on selected service. Users can play around with adding their own service and making a service unavailable via the delete page. This project was created in collaboration with 3 other developers through remote-pair-programming.',
+    features: ['Pair-Programming', 'Responsive'],
+    desc: 'A full-stack “reservation” web application that requires users to be registered and logged in to use. Visitors to the website are able to make reservations for spa services. It features a homepage that displays all available services, a details page that provide details on selected service. Users can play around with adding their own service and making a service unavailable via the delete page.',
     image: spaService,
     techs: ['React', 'Redux', 'JavaScript', 'Ruby on Rails', 'Devise Gem', 'PostgreSQL', 'CSS'],
     live: '',
@@ -67,6 +73,7 @@ const projects = [
   {
     id: 7,
     name: 'TO-DO-LIST',
+    features: ['Solo', 'Responsive'],
     desc: 'A ‘To-do list’ app that allows users to add, check off, and delete daily tasks. It also has a drag and drop feature that facilitates the re-ordering of tasks.',
     image: todo,
     techs: ['HTML', 'CSS', 'JavaScript', 'Webpack', 'Jest', 'GitHub Pages'],
@@ -85,6 +92,11 @@ function Works() {
             <img src={project.image} alt="Screenshot of project" />
             <div className="text-cont">
               <h2>{project.name}</h2>
+              <ul className="features">
+                {project.features.map((feature) => (
+                  <li key={feature}>{feature}</li>
+                ))}
+              </ul>
               <p>{project.desc}</p>
               <div className="buttons-cont">
                 {project.techs.map((tech) => (

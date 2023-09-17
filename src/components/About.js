@@ -20,7 +20,7 @@ function About() {
         <p>
           Hi, my name is Harriet Oteng.
           I&#39;m Civil Engineer turned Software Developer from Ghana.
-          I build websites that are functional, responsiveness, and aesthetically pleasing.
+          I build websites that are functional, responsive, and aesthetically pleasing.
           <br />
           My hobbies include gardening and listening to music.
         </p>
