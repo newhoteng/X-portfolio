@@ -1,7 +1,7 @@
 import React from 'react';
 import { FiArrowUpRight } from 'react-icons/fi';
 import metrics from '../images/Metrics.png';
-import spaService from '../images/spa-services (1).png';
+import spaService from '../images/spa-services.png';
 import exTrack from '../images/Extrack15deg.png';
 import bookstore from '../images/bookstore.png';
 import space from '../images/space-travellers-lighter.png';
