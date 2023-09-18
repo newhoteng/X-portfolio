@@ -43,7 +43,7 @@ function Contact() {
           </div>
         </div>
       </div>
-      <form action="https://formsubmit.co/harriet.oteng@gmail.com" method="post">
+      <form action="https://formsubmit.co/4384d5e4b0272c4b888f0f564164b27c" method="post">
         <input type="text" id="name" name="user_name" placeholder="Full name" />
         <input type="text" id="mail" name="user_email" required placeholder="Email address" />
         <textarea className="mobile" id="msg" name="user_message" required placeholder="Enter text here" maxLength="500" />
