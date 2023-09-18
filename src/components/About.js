@@ -14,6 +14,12 @@ function About() {
 
   return (
     <div className="about-container">
+      <div className="shapes-cont">
+        <div className="shape1" />
+        <div className="shape2" />
+        <div className="shape3" />
+        <div className="shape4" />
+      </div>
       <div className="about-text">
         <div className="profile-img" />
         <h1>ABOUT</h1>

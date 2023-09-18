@@ -9,8 +9,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  /* border: 1px solid red; */
 }
 
 .contact-details {
@@ -51,15 +49,25 @@
   gap: 0.1rem;
   padding: 0.3rem 0;
   width: fit-content;
+  position: relative;
 }
 
-.link:hover {
-  text-decoration: underline;
-  text-underline-offset: 0.45rem;
+.link::after {
+  content: '';
+  height: 1.5px;
+  width: 0;
+  background: #626b88;
+  position: absolute;
+  left: 0;
+  bottom: -0.5px;
+  transition: 0.5s;
+}
+
+.link:hover::after {
+  width: 100%;
 }
 
 form {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,19 +102,23 @@ textarea:focus {
 
 button.submit {
   color: #626b88;
-  background-color: #ecebf3;
   font-size: 1rem;
-  border: 1px solid #626b88;
+  border: 0.5px solid #626b88;
   padding: 0.5rem;
   border-radius: 12px;
   display: flex;
   align-items: center;
   gap: 0.2rem;
+  background: linear-gradient(to right, transparent 50%, #6070ff 50%);
+  background-size: 200%;
+  background-position: left;
+  transition: background-position 0.7s;
 }
 
 button.submit:hover {
-  border: 1px solid #6070ff;
-  color: #6070ff;
+  color: #ebebff;
+  background-position: right;
+  border: 0.5px solid #6070ff;
 }
 
 @media all and (max-width: 500px) {

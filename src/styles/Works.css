@@ -3,6 +3,7 @@
   z-index: -2;
   position: absolute;
   top: 0;
+  overflow: hidden;
 }
 
 .works-cont h1 {

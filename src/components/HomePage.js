@@ -6,11 +6,17 @@ import '../styles/HomePage.css';
 function HomePage() {
   return (
     <div className="hc">
+      <div className="shapes-cont">
+        <div className="shape1" />
+        <div className="shape2" />
+        <div className="shape3" />
+        <div className="shape4" />
+      </div>
       <h1>
         <span>HI THERE, I&#39;M </span>
         HARRIET OTENG!
       </h1>
-      <p>
+      <p className="intro">
         A Full-stack Software Developer
         <br />
         with a keen eye for details.
@@ -28,7 +34,6 @@ function HomePage() {
             <p>more about me</p>
           </div>
         </Link>
-
       </div>
     </div>
   );

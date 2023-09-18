@@ -75,6 +75,12 @@ const projects = [
 function Works() {
   return (
     <div className="works-cont">
+      <div className="shapes-cont">
+        <div className="shape1" />
+        <div className="shape2" />
+        <div className="shape3" />
+        <div className="shape4" />
+      </div>
       <h1>FEATURED PROJECTS</h1>
       <div className="projects-cont">
         {projects.map((project) => (

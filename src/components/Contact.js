@@ -6,6 +6,12 @@ import '../styles/Contact.css';
 function Contact() {
   return (
     <div className="contact-container">
+      <div className="shapes-cont">
+        <div className="shape1" />
+        <div className="shape2" />
+        <div className="shape3" />
+        <div className="shape4" />
+      </div>
       <h1>CONTACT</h1>
       <div className="contact-details">
         <div className="email-container">

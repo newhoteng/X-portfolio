@@ -1,5 +1,4 @@
 .hc {
-  /* height: calc(100vh - 5rem); */
   height: 100vh;
   width: 100%;
   position: absolute;
@@ -13,10 +12,75 @@
   padding: 0 1.5rem;
 }
 
+.shapes-cont {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  filter: blur(0.5rem);
+  overflow: hidden;
+}
+
+.shape1,
+.shape3 {
+  border-radius: 81% 19% 43% 57% / 50% 29% 71% 50%;
+  width: 10rem;
+  height: 10rem;
+  background: linear-gradient(135deg, #eaefaa, #95cdec);
+  transform-origin: -100% 50%;
+  transform: rotate(5deg);
+  animation: rotating 60s linear infinite;
+}
+
+.shape1 {
+  border-radius: 76% 24% 0% 100% / 9% 29% 71% 91%;
+  background: linear-gradient(135deg, #aabcf7, #f7b3c3);
+}
+
+.shape2,
+.shape4 {
+  border-radius: 46% 54% 29% 71% / 26% 29% 71% 74%;
+  width: 7.5rem;
+  height: 9rem;
+  background: linear-gradient(135deg, #8cf0e6, #f1bbbe);
+  animation: rotating 30s linear infinite;
+}
+
+.shape3 {
+  margin-left: auto;
+}
+
+.shape4 {
+  border-radius: 46% 54% 29% 71% / 0% 29% 71% 100%;
+  background: linear-gradient(135deg, #e6fbab, #92f2ca);
+  margin-left: auto;
+}
+
+@keyframes rotating {
+  from {
+    transform-origin: center;
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    transform-origin: center;
+    -webkit-transform: rotate(360deg);
+  }
+}
+
 .hc h1 {
   width: 100%;
   margin-bottom: 0.6rem;
   font-weight: 900;
+  animation: greeting 2s;
+}
+
+@keyframes greeting {
+  0% {
+    opacity: 0;
+    margin-top: -6rem;
+  }
 }
 
 .hc span {
@@ -24,10 +88,25 @@
   text-shadow: -1px 1px 0 #626b88, 1px 1px 0 #626b88, 1px -1px 0 #626b88, -1px -1px 0 #626b88;
 }
 
+.hc .intro {
+  animation: intro 1.5s;
+}
+
 .hc .more-links-cont {
   display: flex;
   gap: 2rem;
   margin-top: 2rem;
+  animation: intro 2s;
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .hc .more-links {
