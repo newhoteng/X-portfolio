@@ -1,7 +1,7 @@
 import React from 'react';
 import { FiArrowUpRight } from 'react-icons/fi';
 import metrics from '../images/Metrics.png';
-import spaService from '../images/spa-services.png';
+// import spaService from '../images/spa-services.png';
 import exTrack from '../images/Extrack15deg.png';
 import bookstore from '../images/bookstore.png';
 import space from '../images/space-travellers-lighter.png';
@@ -59,16 +59,6 @@ const projects = [
     techs: ['React', 'Redux', 'JavaScript', 'React-Router', 'API', 'CSS', 'GitHub Pages'],
     live: 'https://newhoteng.github.io/Bookstore/',
     source: 'https://github.com/newhoteng/Bookstore',
-  },
-  {
-    Id: 1,
-    name: 'SPA SERVICES',
-    features: ['Pair-Programming', 'Responsive'],
-    desc: 'A full-stack “reservation” web application that requires users to be registered and logged in to use. Visitors to the website can make reservations for spa services. It features a homepage that displays all available services, and a details page that provide details on selected service. Users can play around with adding a service and making a service unavailable via the delete page.',
-    image: spaService,
-    techs: ['React', 'Redux', 'JavaScript', 'Ruby on Rails', 'Devise Gem', 'PostgreSQL', 'CSS'],
-    live: '',
-    source: 'https://github.com/newhoteng/spa-booking-frontend',
   },
   {
     id: 7,

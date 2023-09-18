@@ -5,7 +5,7 @@ import '../styles/Contact.css';
 
 function Contact() {
   return (
-    <div className="contact-container hc">
+    <div className="contact-container">
       <h1>CONTACT</h1>
       <div className="contact-details">
         <div className="email-container">
@@ -43,6 +43,15 @@ function Contact() {
           </div>
         </div>
       </div>
+      <form action="https://formsubmit.co/harriet.oteng@gmail.com" method="POST">
+        <input type="text" id="name" name="user_name" placeholder="Full name" />
+        <input type="text" id="mail" name="user_email" required placeholder="Email address" />
+        <textarea className="mobile" id="msg" name="user_message" required placeholder="Enter text here" maxLength="500" />
+        <button className="submit" type="submit">
+          <FiArrowUpRight />
+          Get in touch
+        </button>
+      </form>
     </div>
   );
 }
