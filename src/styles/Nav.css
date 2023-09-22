@@ -34,6 +34,7 @@ nav {
 .menu {
   width: 100%;
   height: 100vh;
+  height: 100svh;
   font-size: 3rem;
   position: fixed;
   top: 0;
