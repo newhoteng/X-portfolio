@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import ReactGa from 'react-ga';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import HomePage from './components/HomePage';
@@ -7,6 +9,12 @@ import Contact from './components/Contact';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    ReactGa.initialize('G-NGF23F2TX7');
+
+    ReactGa.pageview('/');
+  }, []);
+
   return (
     <BrowserRouter>
       <Routes>
