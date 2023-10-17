@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import { Link } from 'react-router-dom';
 import { FiArrowRight } from 'react-icons/fi';
 import '../styles/HomePage.css';
 
 function HomePage() {
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
+    // ReactGA.pageview(window.location.pathname);
+    ReactGA.send({ hitType: 'pageview', page: window.location.pathname + window.location.search, title: 'Home Page' });
   }, []);
 
   return (
