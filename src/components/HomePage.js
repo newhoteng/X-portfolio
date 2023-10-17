@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 import { Link } from 'react-router-dom';
 import { FiArrowRight } from 'react-icons/fi';
 import '../styles/HomePage.css';
 
 function HomePage() {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, [])
+  
   return (
     <div className="hc">
       <div className="shapes-cont">
