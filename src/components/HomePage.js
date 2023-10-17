@@ -7,8 +7,8 @@ import '../styles/HomePage.css';
 function HomePage() {
   useEffect(() => {
     ReactGA.pageview(window.location.pathname);
-  }, [])
-  
+  }, []);
+
   return (
     <div className="hc">
       <div className="shapes-cont">
