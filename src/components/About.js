@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga4';
 import { FiArrowDown } from 'react-icons/fi';
 import DropDown from './Ability';
 import resume from '../Harriet_Oteng_Resume.pdf';
@@ -6,6 +7,10 @@ import resume from '../Harriet_Oteng_Resume.pdf';
 import '../styles/About.css';
 
 function About() {
+  useEffect(() => {
+    // ReactGA.pageview(window.location.pathname);
+    ReactGA.send({ hitType: 'pageview', page: window.location.pathname + window.location.search, title: 'About Page' });
+  }, []);
   const abilities = [
     { type: 'STACK', list: ['JavaScript', 'Ruby', 'Python', 'React', 'Ruby on Rails', 'Django', 'HTML', 'CSS', 'PostgreSQL'] },
     { type: 'TOOLS & METHODS', list: ['Git', 'GitHub', 'Slack', 'TDD', 'Chrome Dev Tools', 'Agile', 'Waterfall'] },

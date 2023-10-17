@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga4';
 import { FiArrowUpRight } from 'react-icons/fi';
 import metrics from '../images/Metrics.png';
-// import spaService from '../images/spa-services.png';
 import exTrack from '../images/Extrack15deg.png';
 import bookstore from '../images/bookstore.png';
 import space from '../images/space-travellers-lighter.png';
@@ -73,6 +73,10 @@ const projects = [
 ];
 
 function Works() {
+  useEffect(() => {
+    // ReactGA.pageview(window.location.pathname);
+    ReactGA.send({ hitType: 'pageview', page: window.location.pathname + window.location.search, title: 'Works Page' });
+  }, []);
   return (
     <div className="works-cont">
       <div className="shapes-cont">
